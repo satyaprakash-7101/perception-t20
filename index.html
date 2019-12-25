@@ -1,0 +1,122 @@
+<html>
+    <head>
+        <title>login</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <script
+        src="https://kit.fontawesome.com/8221a5b36b.js"
+        crossorigin="anonymous"
+      ></script>
+      <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Audiowide|Righteous&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="login.css">
+    </head>
+
+    <body>
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark"aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+           <div style="display: flex;">
+            <button type="button" class="navbar-toggler"  data-toggle="collapse" data-target="#new" style="border:none;color:beige">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <a class="navbar-brand" style=" color: white;font-family: 'Abril Fatface', cursive;margin-top: 10px;">perception</a>
+        </div>
+
+            
+
+        <div class=" collapse navbar-collapse " id="new">
+            <ul class="navbar-nav ml-auto mt-4 mt-lg-2" style="color:white;">
+                <li class="nav-item" style="color:white;">
+                    <a class="nav-link" >HOME</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" >GALLERY</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" >REGISTER</a>
+                </li>                
+                <li class="nav-item">
+                    <a class="nav-link" >CONTACT US</a>
+                </li>
+            </ul>
+        </div>
+            
+        </nav>
+
+        <div class="container " >
+            <div class="row ar">
+            
+                <div class="col-sm-6 " >
+                <button class="form-ox" id="login" onclick="swap(this)">Login</button>
+                </div>
+                <div class="col-sm-6 ">
+                <button class="form-ox uactive" id="register" onclick="swap(this)">Register</button>
+                </div>
+            
+            </div>
+            <div class="ox">
+                <div class="logi " id="e1">
+                    <input type="text" placeholder="e-mail"></br>
+                    <input type="password" placeholder="password"></br>
+                    <a>forgot your key ? break through this way</a>
+                    <button type="submit">submit</button>
+                </div>
+                <div class="reg rua " id="e2" >
+                    <input type="text" placeholder="e-mail"></br>
+                    <input type="text" placeholder="college name"></br>
+                    <input type="password" placeholder="password"></br>
+                    <input type="password" placeholder=" confirm password"></br>
+                    <button type="submit">submit</button>
+                </div>
+            </div>
+        </div>
+
+
+
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    </body>
+    <script>
+        function swap(e){
+            if(e.id == "register"){
+                e.classList.remove("uactive");
+                
+                
+                var x = document.getElementById("login");
+                x.classList.add("uactive");
+                var l = document.getElementById("e1");
+                console.log(l);
+                
+                l.classList.add("lua");
+                var r = document.getElementById("e2");
+                console.log(r);
+                
+                r.classList.remove("rua");
+                
+                  
+
+            }
+            if(e.id == "login"){
+                e.classList.remove("uactive");
+                
+                var x = document.getElementById("register");
+                x.classList.add("uactive");
+
+                var l = document.getElementById("e2");
+                console.log(l);
+                
+                l.classList.add("rua");
+                var r = document.getElementById("e1");
+                console.log(r);
+                
+                r.classList.remove("lua");
+                
+            }
+
+            console.log(x);
+            
+        }
+
+    </script>
+</html>

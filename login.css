@@ -1,0 +1,127 @@
+.container{
+    background-color:rgb(0,0 ,0,0.9 );
+    min-height: 50%;
+    width:500px;
+    left: 35%;
+    margin-top: 10%;
+    border-radius: 15px;
+    
+}
+.top{
+    display: flex;
+    
+}
+
+.form-ox{
+    min-width: 50%;
+    text-align: center;
+    color:white;
+    font-size: 1vw;
+    font-family: 'Audiowide', cursive;
+    margin-left: 5px;
+    margin-top:10px ;
+    border:none;
+    background-color: transparent;
+    border-radius: 25px;
+    
+}
+
+
+.form-ox button{
+    min-width: 30%;
+}
+.uactive{
+    background:white;
+    border-radius: 10%;
+    max-width: 100%;
+    color: black;
+}   
+::placeholder{
+    text-align: center;
+    color:white;    
+    font-size: 1vw;
+    opacity:0.7;
+}
+.logi{
+    
+    width:100%;
+    margin-top: 10%;
+    transition: 1s ease-in-out;
+    
+}
+.reg{
+    
+    width:100%;
+    margin-top: 15%;
+    
+    
+    transition: 1s ease-in-out;
+    
+}
+.lua{
+    margin-left: -100%;
+    opacity:0;
+}
+.rua{
+    margin-right: -100%;
+    opacity: 0;
+}
+
+.logi input{
+    height:10%;
+    border: none;
+    border-bottom:white solid 1px;
+    background:transparent;
+    color: white;
+}
+.logi input,button,a{
+    width:70% ;
+    margin-left: 15%;
+    margin-top:8% ;
+    margin-bottom: 15%;
+    
+}
+.logi button{
+    border-radius: 50px;
+    border:none;
+    margin-top:5% ;
+    background-color: white;
+    height: 10%;
+    width: 60%;
+    margin-left: 19%;
+    font-size: 2vw;
+    font-family: 'Righteous', cursive;
+}
+.reg input,button{
+    width:70% ;
+    margin-left: 15%;
+    margin-bottom: 8%;
+    
+}
+.logi a{
+    color:greenyellow;
+}
+.reg input{
+    border: none;
+    margin-bottom: 5%;
+    background: transparent;
+    border-bottom: black solid;
+    color: white;
+    
+}
+.reg button{
+    border-radius: 50px;
+    border:none;
+    background-color: white;
+    height: 10%;
+    width: 60%;
+    margin-left: 19%;
+    font-family: 'Righteous', cursive;
+}
+.ox{
+    display: flex;
+}
+.ar{
+    min-width:100%;
+    
+}
